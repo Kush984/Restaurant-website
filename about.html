@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoonBite | About</title>
+
+    <!-- ==================== CSS LINKS (for the CSS team) ====================
+         1. css/style.css  -> global styles shared by ALL pages
+            (dark theme, fonts, colours, navbar, buttons, footer, responsive/mobile rules)
+         2. css/about.css -> styles that belong only to this page
+    ======================================================================= -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+
+    <!-- ==================== JS LINKS (for the JS team) ====================
+         1. js/main.js  -> shared JS (mobile hamburger menu toggle, etc.)
+         2. js/about.js -> JS that belongs only to this page
+    ===================================================================== -->
+    <script src="./js/main.js" defer></script>
+    <script src="./js/about.js" defer></script>
+  </head>
+  <body>
+    <!-- ==================== NAVBAR (same on every page) ==================== -->
+    <!-- CSS: style as a flex row, logo on left, links centre, button right.
+         The "active" class on a link = highlighted/underlined current page. -->
+    <header class="navbar">
+      <div class="logo">🍴 <span class="logo-text">Moon<span class="logo-accent">Bite</span></span></div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./menu.html" class="nav-link">Menu</a></li>
+          <li><a href="./gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="./about.html" class="nav-link active">About</a></li>
+          <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="./contact.html" class="btn btn--book">Book a Table</a>
+
+      <!-- CSS: hide this hamburger on desktop, show it only on mobile screens (see mobile view in design).
+           JS: toggle the nav links open/close when this button is clicked. -->
+      <button class="hamburger" id="hamburger">☰</button>
+    </header>
+
+    <main>
+      <!-- ==================== ABOUT SECTION ==================== -->
+      <!-- CSS: two columns - text on the left, tall restaurant image on the right; stack on mobile -->
+      <section class="about">
+        <div class="about-text">
+          <p class="section-label">OUR STORY</p>
+          <h1 class="section-title">More Than Just a <span class="logo-accent">Meal</span></h1>
+          <p class="about-desc">
+            At <span class="logo-accent">MoonBite</span>, we believe food brings people together. Our restaurant is built on a simple idea — to serve fresh, high-quality food in a warm and welcoming space.
+          </p>
+
+          <div class="about-point">
+            <p class="about-icon">🌿</p>
+            <div>
+              <h3 class="about-point-title">Fresh Ingredients</h3>
+              <p class="about-point-text">Locally sourced and seasonal produce</p>
+            </div>
+          </div>
+          <div class="about-point">
+            <p class="about-icon">🌿</p>
+            <div>
+              <h3 class="about-point-title">Cozy Ambience</h3>
+              <p class="about-point-text">A comfortable space for everyone</p>
+            </div>
+          </div>
+          <div class="about-point">
+            <p class="about-icon">💛</p>
+            <div>
+              <h3 class="about-point-title">Friendly Service</h3>
+              <p class="about-point-text">Because you matter</p>
+            </div>
+          </div>
+
+          <a href="./contact.html" class="btn btn--primary">Learn More →</a>
+        </div>
+
+        <img src="./images/about-restaurant.jpg" alt="Inside the MoonBite restaurant" class="about-img" />
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER (same on every page) ==================== -->
+    <div class="footer">
+      <div class="logo">🍴 <span class="logo-text">Moon<span class="logo-accent">Bite</span></span></div>
+      <ul class="footer-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./menu.html">Menu</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <p class="copyright">© 2026 MoonBite. All rights reserved.</p>
+    </div>
+  </body>
+</html>

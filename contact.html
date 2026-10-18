@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoonBite | Contact</title>
+
+    <!-- ==================== CSS LINKS (for the CSS team) ====================
+         1. css/style.css  -> global styles shared by ALL pages
+            (dark theme, fonts, colours, navbar, buttons, footer, responsive/mobile rules)
+         2. css/contact.css -> styles that belong only to this page
+    ======================================================================= -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+
+    <!-- ==================== JS LINKS (for the JS team) ====================
+         1. js/main.js  -> shared JS (mobile hamburger menu toggle, etc.)
+         2. js/contact.js -> JS that belongs only to this page
+    ===================================================================== -->
+    <script src="./js/main.js" defer></script>
+    <script src="./js/contact.js" defer></script>
+  </head>
+  <body>
+    <!-- ==================== NAVBAR (same on every page) ==================== -->
+    <!-- CSS: style as a flex row, logo on left, links centre, button right.
+         The "active" class on a link = highlighted/underlined current page. -->
+    <header class="navbar">
+      <div class="logo">🍴 <span class="logo-text">Moon<span class="logo-accent">Bite</span></span></div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./menu.html" class="nav-link">Menu</a></li>
+          <li><a href="./gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="./about.html" class="nav-link">About</a></li>
+          <li><a href="./contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="./contact.html" class="btn btn--book">Book a Table</a>
+
+      <!-- CSS: hide this hamburger on desktop, show it only on mobile screens (see mobile view in design).
+           JS: toggle the nav links open/close when this button is clicked. -->
+      <button class="hamburger" id="hamburger">☰</button>
+    </header>
+
+    <main>
+      <!-- ==================== CONTACT HEADING ==================== -->
+      <header class="section-header">
+        <p class="section-label">GET IN TOUCH</p>
+        <h1 class="section-title">Contact Us</h1>
+        <p class="section-desc">
+          We'd love to hear from you! Reach out for reservations, feedback or any queries.
+        </p>
+      </header>
+
+      <!-- ==================== CONTACT DETAILS + MESSAGE BOX ==================== -->
+      <!-- CSS: two columns - contact info on the left, message box on the right; stack on mobile -->
+      <section class="contact">
+        <div class="contact-info">
+          <p class="contact-item">📞 +91 98765 43210</p>
+          <p class="contact-item">✉️ hello@moonbite.in</p>
+          <p class="contact-item">📍 123 Foodie Lane, MG Road, Delhi - 110001</p>
+
+          <!-- Social links: replace # with real profile URLs. CSS: small round icon-style links in a row. -->
+          <div class="socials">
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">X</a>
+            <a href="#" class="social-link">YouTube</a>
+          </div>
+        </div>
+
+        <!-- JS: validate the fields (not empty, valid email) and handle the "Send Message" click
+                 (show a success message, or send the data to a backend). -->
+        <div class="contact-box">
+          <input type="text" class="contact-name" placeholder="Name" />
+          <input type="text" class="contact-email" placeholder="Email" />
+          <!-- CSS: make this field taller so it looks like a message area -->
+          <input type="text" class="contact-message" placeholder="Message" />
+          <button class="btn btn--primary btn--send">Send Message</button>
+        </div>
+      </section>
+
+      <!-- ==================== MAP ==================== -->
+      <!-- Placeholder block. CSS: dark rectangle with rounded corners.
+           JS/Dev: replace with an embedded Google Map or a static map image later. -->
+      <section class="map">
+        <p class="map-pin">📍 MoonBite</p>
+        <a href="#" class="map-link">View on Google Maps →</a>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER (same on every page) ==================== -->
+    <div class="footer">
+      <div class="logo">🍴 <span class="logo-text">Moon<span class="logo-accent">Bite</span></span></div>
+      <ul class="footer-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./menu.html">Menu</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <p class="copyright">© 2026 MoonBite. All rights reserved.</p>
+    </div>
+  </body>
+</html>
