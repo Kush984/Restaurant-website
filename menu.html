@@ -10,8 +10,9 @@
             (dark theme, fonts, colours, navbar, buttons, footer, responsive/mobile rules)
          2. css/menu.css -> styles that belong only to this page
     ======================================================================= -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/moonbite-base.css" />
+    <!-- <link rel="stylesheet" href="./css/moonbite-flexbox.css" /> -->
+    <link rel="stylesheet" href="./css/moonbite-menu.css" />
 
     <!-- ==================== JS LINKS (for the JS team) ====================
          1. js/main.js  -> shared JS (mobile hamburger menu toggle, etc.)
@@ -39,6 +40,7 @@
 
       <a href="./contact.html" class="btn btn--book">Book a Table</a>
 
+      <button id = "theme" class = "theme-change" aria-label = "Switch to light mode">☀</button>
       <!-- CSS: hide this hamburger on desktop, show it only on mobile screens (see mobile view in design).
            JS: toggle the nav links open/close when this button is clicked. -->
       <button class="hamburger" id="hamburger">☰</button>
@@ -71,49 +73,49 @@
       <!-- CSS: grid with 4 columns on desktop (2 rows of 4), fewer columns on tablet/mobile -->
       <section class="menu-grid">
         <div class="menu-card starters">
-          <img src="./images/bruschetta.jpg" alt="Bruschetta" class="menu-img" />
+          <img src="./images/bruschetta.png" alt="Bruschetta" class="menu-img" />
           <h3 class="menu-name">Bruschetta</h3>
           <p class="menu-desc">Toasted bread with fresh tomatoes, basil and olive oil.</p>
           <p class="menu-price">₹180</p>
         </div>
         <div class="menu-card main-course">
-          <img src="./images/alfredo-pasta.jpg" alt="Creamy Alfredo Pasta" class="menu-img" />
+          <img src="./images/alfredo-pasta.png" alt="Creamy Alfredo Pasta" class="menu-img" />
           <h3 class="menu-name">Creamy Alfredo Pasta</h3>
           <p class="menu-desc">Rich and creamy pasta with parmesan cheese.</p>
           <p class="menu-price">₹280</p>
         </div>
         <div class="menu-card main-course">
-          <img src="./images/chicken-bowl.jpg" alt="Grilled Chicken Bowl" class="menu-img" />
+          <img src="./images/chicken-bowl.png" alt="Grilled Chicken Bowl" class="menu-img" />
           <h3 class="menu-name">Grilled Chicken Bowl</h3>
           <p class="menu-desc">Herbed chicken with quinoa, veggies and greens.</p>
           <p class="menu-price">₹320</p>
         </div>
         <div class="menu-card desserts">
-          <img src="./images/lava-cake.jpg" alt="Chocolate Lava Cake" class="menu-img" />
+          <img src="./images/lava-cake.png" alt="Chocolate Lava Cake" class="menu-img" />
           <h3 class="menu-name">Chocolate Lava Cake</h3>
           <p class="menu-desc">Warm chocolate cake with vanilla ice cream.</p>
           <p class="menu-price">₹180</p>
         </div>
         <div class="menu-card main-course">
-          <img src="./images/margherita-pizza.jpg" alt="Margherita Pizza" class="menu-img" />
+          <img src="./images/margherita-pizza.png" alt="Margherita Pizza" class="menu-img" />
           <h3 class="menu-name">Margherita Pizza</h3>
           <p class="menu-desc">Classic pizza with fresh basil and mozzarella.</p>
           <p class="menu-price">₹260</p>
         </div>
         <div class="menu-card main-course">
-          <img src="./images/classic-burger.jpg" alt="Classic Burger" class="menu-img" />
+          <img src="./images/classic-burger.png" alt="Classic Burger" class="menu-img" />
           <h3 class="menu-name">Classic Burger</h3>
           <p class="menu-desc">Juicy beef patty with lettuce, tomato and special sauce.</p>
           <p class="menu-price">₹290</p>
         </div>
         <div class="menu-card drinks">
-          <img src="./images/blue-lagoon.jpg" alt="Blue Lagoon mocktail" class="menu-img" />
+          <img src="./images/blue-lagoon.png" alt="Blue Lagoon mocktail" class="menu-img" />
           <h3 class="menu-name">Blue Lagoon (Mocktail)</h3>
           <p class="menu-desc">Refreshing blue curacao drink with a hint of lemon.</p>
           <p class="menu-price">₹150</p>
         </div>
         <div class="menu-card drinks">
-          <img src="./images/cappuccino.jpg" alt="Cappuccino" class="menu-img" />
+          <img src="./images/cappuccino.png" alt="Cappuccino" class="menu-img" />
           <h3 class="menu-name">Cappuccino</h3>
           <p class="menu-desc">Rich espresso with steamed milk.</p>
           <p class="menu-price">₹120</p>
@@ -122,16 +124,16 @@
     </main>
 
     <!-- ==================== FOOTER (same on every page) ==================== -->
-    <div class="footer">
-      <div class="logo">🍴 <span class="logo-text">Moon<span class="logo-accent">Bite</span></span></div>
-      <ul class="footer-links">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./menu.html">Menu</a></li>
-        <li><a href="./gallery.html">Gallery</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-      <p class="copyright">© 2026 MoonBite. All rights reserved.</p>
-    </div>
+    <footer><div class="footer">
+    <!-- <div class="logo">🍴 <span class="logo-text">Moon<span class="logo-accent">Bite</span></span></div>
+    <ul class="footer-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./menu.html">Menu</a></li>
+      <li><a href="./gallery.html">Gallery</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul> -->
+    <p class="copyright">© 2026 MoonBite. All rights reserved.</p>
+    </div></footer>
   </body>
 </html>
