@@ -1,0 +1,48 @@
+/* Reusable flexbox layout helpers */
+.flex { display: flex; }
+.flex-inline { display: inline-flex; }
+.flex-row { display: flex; flex-direction: row; }
+.flex-column { display: flex; flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-nowrap { flex-wrap: nowrap; }
+.flex-center { display: flex; align-items: center; justify-content: center; }
+.flex-between { display: flex; align-items: center; justify-content: space-between; }
+.flex-start { display: flex; align-items: flex-start; }
+.flex-end { display: flex; align-items: flex-end; }
+.flex-gap-sm { gap: .75rem; }
+.flex-gap { gap: 1.5rem; }
+.flex-gap-lg { gap: 2.5rem; }
+.flex-1 { flex: 1 1 0; }
+.flex-auto { flex: 1 1 auto; }
+.flex-none { flex: none; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-end { justify-content: flex-end; }
+
+.flex-card-row {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1.25rem;
+}
+
+.flex-card-row > * { flex: 1 1 220px; min-width: 0; }
+
+.flex-split {
+  display: flex;
+  align-items: center;
+  gap: clamp(2rem, 6vw, 5rem);
+}
+
+.flex-split > * { flex: 1 1 0; min-width: 0; }
+.flex-sidebar { display: flex; align-items: flex-start; gap: 2rem; }
+.flex-sidebar > :first-child { flex: 0 0 34%; }
+.flex-sidebar > :last-child { flex: 1 1 auto; min-width: 0; }
+
+@media (max-width: 760px) {
+  .flex-split, .flex-sidebar { flex-direction: column; }
+  .flex-sidebar > :first-child, .flex-sidebar > :last-child { flex-basis: auto; width: 100%; }
+  .flex-stack-mobile { flex-direction: column; align-items: stretch; }
+}

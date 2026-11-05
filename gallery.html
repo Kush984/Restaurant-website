@@ -10,8 +10,9 @@
             (dark theme, fonts, colours, navbar, buttons, footer, responsive/mobile rules)
          2. css/gallery.css -> styles that belong only to this page
     ======================================================================= -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/gallery.css" />
+    <link rel="stylesheet" href="./css/moonbite-base.css" />
+    <link rel="stylesheet" href="./css/moonbite-flexbox.css" />
+    <link rel="stylesheet" href="./css/moonbite-gallery.css" />
 
     <!-- ==================== JS LINKS (for the JS team) ====================
          1. js/main.js  -> shared JS (mobile hamburger menu toggle, etc.)
@@ -39,6 +40,7 @@
 
       <a href="./contact.html" class="btn btn--book">Book a Table</a>
 
+      <button id = "theme" class = "theme-change" aria-label = "Switch to light mode">☀</button>
       <!-- CSS: hide this hamburger on desktop, show it only on mobile screens (see mobile view in design).
            JS: toggle the nav links open/close when this button is clicked. -->
       <button class="hamburger" id="hamburger">☰</button>
@@ -58,26 +60,26 @@
       <!-- CSS: 3 columns x 2 rows grid, equal sized images with rounded corners and hover effect.
            JS (optional): open a bigger preview when an image is clicked. -->
       <section class="gallery-grid">
-        <img src="./images/gallery-pasta.jpg" alt="Pasta dish" class="gallery-img" />
-        <img src="./images/gallery-interior-1.jpg" alt="Restaurant interior with warm lights" class="gallery-img" />
-        <img src="./images/gallery-burger.jpg" alt="Burger and fries" class="gallery-img" />
-        <img src="./images/gallery-cake.jpg" alt="Chocolate dessert" class="gallery-img" />
-        <img src="./images/gallery-drink.jpg" alt="Orange cocktail drink" class="gallery-img" />
-        <img src="./images/gallery-interior-2.jpg" alt="Candle lit dining table" class="gallery-img" />
+        <img src="./images/gallery-pasta.png" alt="Pasta dish" class="gallery-img" />
+        <img src="./images/gallery-interior-1.png" alt="Restaurant interior with warm lights" class="gallery-img" />
+        <img src="./images/gallery-burger.png" alt="Burger and fries" class="gallery-img" />
+        <img src="./images/gallery-cake.png" alt="Chocolate dessert" class="gallery-img" />
+        <img src="./images/gallery-drink.png" alt="Orange cocktail drink" class="gallery-img" />
+        <img src="./images/gallery-interior-2.png" alt="Candle lit dining table" class="gallery-img" />
       </section>
     </main>
 
     <!-- ==================== FOOTER (same on every page) ==================== -->
-    <div class="footer">
-      <div class="logo">🍴 <span class="logo-text">Moon<span class="logo-accent">Bite</span></span></div>
+    <footer><div class="footer">
+      <!-- <div class="logo">🍴 <span class="logo-text">Moon<span class="logo-accent">Bite</span></span></div>
       <ul class="footer-links">
         <li><a href="./index.html">Home</a></li>
         <li><a href="./menu.html">Menu</a></li>
         <li><a href="./gallery.html">Gallery</a></li>
         <li><a href="./about.html">About</a></li>
         <li><a href="./contact.html">Contact</a></li>
-      </ul>
+      </ul> -->
       <p class="copyright">© 2026 MoonBite. All rights reserved.</p>
-    </div>
+    </div></footer>
   </body>
 </html>

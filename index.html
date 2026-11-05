@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+<!-- =<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +10,7 @@
     <h1>Restaurant Website</h1>
 </body>
 </html>
-=======
+====== -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -23,15 +23,16 @@
             (dark theme, fonts, colours, navbar, buttons, footer, responsive/mobile rules)
          2. css/index.css -> styles that belong only to this page
     ======================================================================= -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/moonbite-base.css" />
+    <link rel="stylesheet" href="./css/moonbite-flexbox.css" />
+    <!-- <link rel="stylesheet" href="./css/index.css" /> -->
 
     <!-- ==================== JS LINKS (for the JS team) ====================
          1. js/main.js  -> shared JS (mobile hamburger menu toggle, etc.)
          2. js/index.js -> JS that belongs only to this page
     ===================================================================== -->
     <script src="./js/main.js" defer></script>
-    <script src="./js/index.js" defer></script>
+    <!-- <script src="./js/index.js" defer></script> -->
   </head>
   <body>
     <!-- ==================== NAVBAR (same on every page) ==================== -->
@@ -52,6 +53,7 @@
 
       <a href="./contact.html" class="btn btn--book">Book a Table</a>
 
+      <button id = "theme" class = "theme-change" aria-label = "Switch to light mode">☀</button>
       <!-- CSS: hide this hamburger on desktop, show it only on mobile screens (see mobile view in design).
            JS: toggle the nav links open/close when this button is clicked. -->
       <button class="hamburger" id="hamburger">☰</button>
@@ -69,7 +71,7 @@
           </p>
           <a href="./menu.html" class="btn btn--primary">Explore Menu →</a>
         </div>
-        <img src="./images/hero-pasta.jpg" alt="Bowl of pasta with fresh basil" class="hero-img" />
+        <img src="./images/hero-pasta.png" alt="Bowl of pasta with fresh basil" class="hero-img" />
       </section>
 
       <!-- ==================== FEATURES STRIP ==================== -->
@@ -99,17 +101,17 @@
     </main>
 
     <!-- ==================== FOOTER (same on every page) ==================== -->
-    <div class="footer">
-      <div class="logo">🍴 <span class="logo-text">Moon<span class="logo-accent">Bite</span></span></div>
+    <footer><div class="footer">
+      <!-- <div class="logo">🍴 <span class="logo-text">Moon<span class="logo-accent">Bite</span></span></div>
       <ul class="footer-links">
         <li><a href="./index.html">Home</a></li>
         <li><a href="./menu.html">Menu</a></li>
         <li><a href="./gallery.html">Gallery</a></li>
         <li><a href="./about.html">About</a></li>
         <li><a href="./contact.html">Contact</a></li>
-      </ul>
+      </ul> -->
       <p class="copyright">© 2026 MoonBite. All rights reserved.</p>
-    </div>
+    </div></footer>
   </body>
 </html>
->>>>>>> master
+<!-- >>>>>>> master -->

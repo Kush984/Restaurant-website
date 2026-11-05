@@ -10,8 +10,9 @@
             (dark theme, fonts, colours, navbar, buttons, footer, responsive/mobile rules)
          2. css/contact.css -> styles that belong only to this page
     ======================================================================= -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/moonbite-base.css" />
+    <link rel="stylesheet" href="./css/moonbite-flexbox.css" />
+    <link rel="stylesheet" href="./css/moonbite-contact.css" />
 
     <!-- ==================== JS LINKS (for the JS team) ====================
          1. js/main.js  -> shared JS (mobile hamburger menu toggle, etc.)
@@ -39,6 +40,7 @@
 
       <a href="./contact.html" class="btn btn--book">Book a Table</a>
 
+      <button id = "theme" class = "theme-change" aria-label = "Switch to light mode">☀</button>
       <!-- CSS: hide this hamburger on desktop, show it only on mobile screens (see mobile view in design).
            JS: toggle the nav links open/close when this button is clicked. -->
       <button class="hamburger" id="hamburger">☰</button>
@@ -73,35 +75,36 @@
 
         <!-- JS: validate the fields (not empty, valid email) and handle the "Send Message" click
                  (show a success message, or send the data to a backend). -->
-        <div class="contact-box">
-          <input type="text" class="contact-name" placeholder="Name" />
-          <input type="text" class="contact-email" placeholder="Email" />
+        <div class="contact-box" id = "contactForm">
+          <input type="text" class="contact-name" placeholder="Name" id = "name"/>
+          <input type="email" class="contact-email" placeholder="Email" id = "email"/>
           <!-- CSS: make this field taller so it looks like a message area -->
-          <input type="text" class="contact-message" placeholder="Message" />
-          <button class="btn btn--primary btn--send">Send Message</button>
+          <input type="textarea" class="contact-message" placeholder="Message" id = "message" />
+          <button class="btn btn--primary btn--send" id = "sendMsg">Send Message</button>
+          <p id = "formResponse"></p>
         </div>
       </section>
 
       <!-- ==================== MAP ==================== -->
       <!-- Placeholder block. CSS: dark rectangle with rounded corners.
            JS/Dev: replace with an embedded Google Map or a static map image later. -->
-      <section class="map">
+      <!-- <section class="map">
         <p class="map-pin">📍 MoonBite</p>
         <a href="#" class="map-link">View on Google Maps →</a>
       </section>
-    </main>
+    </main> -->
 
     <!-- ==================== FOOTER (same on every page) ==================== -->
-    <div class="footer">
-      <div class="logo">🍴 <span class="logo-text">Moon<span class="logo-accent">Bite</span></span></div>
+    <footer><div class="footer">
+      <!-- <div class="logo">🍴 <span class="logo-text">Moon<span class="logo-accent">Bite</span></span></div>
       <ul class="footer-links">
         <li><a href="./index.html">Home</a></li>
         <li><a href="./menu.html">Menu</a></li>
         <li><a href="./gallery.html">Gallery</a></li>
         <li><a href="./about.html">About</a></li>
         <li><a href="./contact.html">Contact</a></li>
-      </ul>
+      </ul> -->
       <p class="copyright">© 2026 MoonBite. All rights reserved.</p>
-    </div>
+    </div></footer>
   </body>
 </html>
