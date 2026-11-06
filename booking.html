@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoonBite | Book a Table</title>
+
+  <link rel="stylesheet" href="./css/moonbite-base.css">
+  <link rel="stylesheet" href="./css/moonbite-flexbox.css">
+  <link rel="stylesheet" href="./css/booking.css">
+
+  <script src="./js/booking.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">🍴
+      <span class="logo-text">Moon<span class="logo-accent">Bite</span></span>
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./menu.html">Menu</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="booking-page">
+    <div class="booking-card">
+
+      <p class="section-label">YOUR TABLE AWAITS</p>
+      <h1>Reserve Your <span>Table</span></h1>
+      <p class="booking-desc">
+        Make your dining experience special.
+        Book your table with MoonBite.
+      </p>
+
+      <form id="bookingForm">
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name"
+          placeholder="Enter your name" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone"
+          placeholder="10 digit mobile number"
+          pattern="[0-9]{10}" maxlength="10" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email"
+          placeholder="Enter your email" required>
+
+        <div class="booking-row">
+          <div>
+            <label for="date">Booking Date</label>
+            <input type="date" id="date" required>
+          </div>
+
+          <div>
+            <label for="time">Booking Time</label>
+            <select id="time" required>
+              <option value="">Select time</option>
+              <option>12:00 PM</option>
+              <option>01:00 PM</option>
+              <option>02:00 PM</option>
+              <option>06:00 PM</option>
+              <option>07:00 PM</option>
+              <option>08:00 PM</option>
+              <option>09:00 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="guests">Number of Guests</label>
+        <select id="guests" required>
+          <option value="">Select guests</option>
+          <option value="1">1 Guest</option>
+          <option value="2">2 Guests</option>
+          <option value="3">3 Guests</option>
+          <option value="4">4 Guests</option>
+          <option value="5">5 Guests</option>
+          <option value="6">6 Guests</option>
+          <option value="7">7 Guests</option>
+          <option value="8">8 Guests</option>
+        </select>
+
+        <label for="request">Special Requests (Optional)</label>
+        <textarea id="request"
+          placeholder="Any special request?"></textarea>
+
+        <button type="submit" class="booking-btn">
+          Confirm Booking
+        </button>
+
+      </form>
+
+      <div id="bookingMessage" aria-live="polite"></div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 MoonBite. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
