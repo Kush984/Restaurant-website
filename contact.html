@@ -38,7 +38,7 @@
         </ul>
       </nav>
 
-      <a href="./booking.html" class="btn btn--book">Book a Table</a>
+      <a href="./contact.html" class="btn btn--book">Book a Table</a>
 
       <button id = "theme" class = "theme-change" aria-label = "Switch to light mode">☀</button>
       <!-- CSS: hide this hamburger on desktop, show it only on mobile screens (see mobile view in design).
@@ -50,9 +50,10 @@
       <!-- ==================== CONTACT HEADING ==================== -->
       <header class="section-header">
         <p class="section-label">GET IN TOUCH</p>
-        <h1 class="section-title">Contact Us</h1>
+        <h1 class="section-title">Book a Table</h1>
         <p class="section-desc">
-          We'd love to hear from you! Reach out for reservations, feedback or any queries.
+          Reserve your table at MoonBite and enjoy
+          a wonderful dining experience with us.
         </p>
       </header>
 
@@ -76,11 +77,36 @@
         <!-- JS: validate the fields (not empty, valid email) and handle the "Send Message" click
                  (show a success message, or send the data to a backend). -->
         <div class="contact-box" id = "contactForm">
-          <input type="text" class="contact-name" placeholder="Name" id = "name"/>
-          <input type="email" class="contact-email" placeholder="Email" id = "email"/>
+          <h2>Reserve Your Table!</h2>
+          <input type="text" placeholder="Full Name" id = "name"/>
+          <input type="email" placeholder="Email" id = "email"/>
           <!-- CSS: make this field taller so it looks like a message area -->
-          <input type="textarea" class="contact-message" placeholder="Message" id = "message" />
-          <button class="btn btn--primary btn--send" id = "sendMsg">Send Message</button>
+          <input type="tel" placeholder="Phone Number" id = "phone" />
+          <label for = "bookingDate">Booking Date</label>
+          <input type = "date" id = "bookingDate"/>
+          <label for="bookingTime">Booking Time</label>
+            <select id="bookingTime">
+              <option value="">Select Time</option>
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="1:00 PM">1:00 PM</option>
+              <option value="6:00 PM">6:00 PM</option>
+              <option value="7:00 PM">7:00 PM</option>
+              <option value="8:00 PM">8:00 PM</option>
+              <option value="9:00 PM">9:00 PM</option>
+            </select>
+          <label for="guests">Number of Guests</label>
+            <select id="guests">
+              <option value="">Select Guests</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5 Guests</option>
+              <option value="6">6 Guests</option>
+              <option value="7">7 Guests</option>
+              <option value="8">8 Guests</option>
+            </select>
+          <button class="btn btn--primary btn--send" id = "sendMsg">Reserve a Table</button>
           <p id = "formResponse"></p>
         </div>
       </section>
@@ -91,8 +117,8 @@
       <!-- <section class="map">
         <p class="map-pin">📍 MoonBite</p>
         <a href="#" class="map-link">View on Google Maps →</a>
-      </section>
-    </main> -->
+      </section> -->
+    </main>
 
     <!-- ==================== FOOTER (same on every page) ==================== -->
     <footer><div class="footer">
