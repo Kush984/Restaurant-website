@@ -1,16 +1,4 @@
-<!-- =<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Restaurant Website</h1>
-</body>
-</html>
-====== -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -18,26 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MoonBite | Home</title>
 
-    <!-- ==================== CSS LINKS (for the CSS team) ====================
-         1. css/style.css  -> global styles shared by ALL pages
-            (dark theme, fonts, colours, navbar, buttons, footer, responsive/mobile rules)
-         2. css/index.css -> styles that belong only to this page
-    ======================================================================= -->
+   
     <link rel="stylesheet" href="./css/moonbite-base.css" />
     <link rel="stylesheet" href="./css/moonbite-flexbox.css" />
     <link rel="stylesheet" href="./css/home.css" />
 
-    <!-- ==================== JS LINKS (for the JS team) ====================
-         1. js/main.js  -> shared JS (mobile hamburger menu toggle, etc.)
-         2. js/index.js -> JS that belongs only to this page
-    ===================================================================== -->
     <script src="./js/main.js" defer></script>
-    <!-- <script src="./js/index.js" defer></script> -->
+
   </head>
   <body>
-    <!-- ==================== NAVBAR (same on every page) ==================== -->
-    <!-- CSS: style as a flex row, logo on left, links centre, button right.
-         The "active" class on a link = highlighted/underlined current page. -->
+
     <header class="navbar">
       <div class="logo">🍴 <span class="logo-text">Moon<span class="logo-accent">Bite</span></span></div>
 
@@ -54,14 +32,12 @@
       <a href="./contact.html" class="btn btn--book">Book a Table</a>
 
       <button id = "theme" class = "theme-change" aria-label = "Switch to light mode">☀</button>
-      <!-- CSS: hide this hamburger on desktop, show it only on mobile screens (see mobile view in design).
-           JS: toggle the nav links open/close when this button is clicked. -->
+  
       <button class="hamburger" id="hamburger">☰</button>
     </header>
 
     <main>
-      <!-- ==================== HERO SECTION ==================== -->
-      <!-- CSS: full-width dark section; set images/hero-pasta.jpg as background (or position the img on the right) -->
+
       <section class="hero">
         <div class="hero-text">
           <p class="hero-tagline">GOOD FOOD • GREAT VIBES</p>
@@ -74,8 +50,7 @@
         <img src="./images/hero-pasta.png" alt="Bowl of pasta with fresh basil" class="hero-img" />
       </section>
 
-      <!-- ==================== FEATURES STRIP ==================== -->
-      <!-- CSS: 4 equal columns in a row (flex/grid); stack vertically on mobile -->
+
       <section class="features">
         <div class="feature">
           <p class="feature-icon">🍃</p>
@@ -100,18 +75,10 @@
       </section>
     </main>
 
-    <!-- ==================== FOOTER (same on every page) ==================== -->
+
     <footer><div class="footer">
-      <!-- <div class="logo">🍴 <span class="logo-text">Moon<span class="logo-accent">Bite</span></span></div>
-      <ul class="footer-links">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./menu.html">Menu</a></li>
-        <li><a href="./gallery.html">Gallery</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul> -->
-      <p class="copyright">© 2026 MoonBite. All rights reserved.</p>
+    copyright">© 2026 MoonBite. All rights reserved.</p>
     </div></footer>
   </body>
 </html>
-<!-- >>>>>>> master -->
+
